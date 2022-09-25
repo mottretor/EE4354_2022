@@ -2,16 +2,22 @@ package week01.exercises;
 
 public class LeapYear {
     public static void main(String[] args) {
-        int year = 2404;
+        boolean result = isLeapYear(2012);
+        System.out.println(result);
 
+        
+    }
+
+    static boolean isLeapYear(int year){
+        year = 2000;
         if (year%400 == 0) {
-            System.out.println("Leap Year");
+            return true;
         } else if(year%100 == 0){
-            System.out.println("Not a Leap Year");
+            return false;
         }else if(year%4 == 0 ){
-            System.out.println("Leap Year");
+            return true;
         }else{
-            System.out.println("Not a Leap Year");
+            return false;
         }
     }
 }
