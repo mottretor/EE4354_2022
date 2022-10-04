@@ -41,6 +41,8 @@ public class SnakesAndLadders {
                 System.out.println("Dice value exceeds 150. Skipping");
             }
 
+            
+
             playerturn = (playerturn + 1) % 3;
         }
     }
